@@ -13,12 +13,13 @@ for(var i = 0; i <81; i++){
 }
 
 
-for(var i = 0; i <81; i++){
+for(var j = 0; j <81; j++){
 	var myDiv = document.createElement("div");
 	myDiv.style.width = "11.1%";
 	myDiv.style.float = "left";
 	myDiv.style.paddingBottom = '11.1%';
-	myDiv.style.backgroundColor='"#" + Math.random().toString(16).slice(2, 8)';
+	var hexColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+	myDiv.style.backgroundColor= hexColor;
 	
 	document.body.appendChild(myDiv);
 }
