@@ -23,3 +23,17 @@ for(var j = 0; j <81; j++){
 	
 	document.body.appendChild(myDiv);
 }
+
+
+for(var j = 0; j <81; j++){
+	var myDiv = document.createElement("div");
+	myDiv.style.width = "11.1%";
+	myDiv.style.float = "left";
+	myDiv.style.paddingBottom = '11.1%';
+	if(i%2===0)
+	  myDiv.style.backgroundColor=rgb(1,1,1);
+	else
+	  myDiv.style.backgroundColor=rgb(5,5,5);
+	
+	document.body.appendChild(myDiv);
+}
